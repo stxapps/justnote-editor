@@ -5,7 +5,7 @@
   "main": "./build/ckeditor.js",
   "scripts": {
     "patch-js": "node bin/patch.js",
-    "build": "webpack --mode production"
+    "build": "npm run patch-js && webpack --mode production"
   },
   "dependencies": {
     "blueimp-load-image": "^5.16.0",
