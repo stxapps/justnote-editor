@@ -39,7 +39,7 @@ class Adapter {
       window.ReactNativeWebView.postMessage('update:isUploading:true');
     }
 
-    return this.loader.file.then(file => new Promise<any>((resolve, reject) => {
+    return this.loader.file.then(file => new Promise((resolve, reject) => {
       loadImage(
         file,
         { maxWidth: 1688, maxHeight: 1688, orientation: true, meta: true, canvas: true }

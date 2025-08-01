@@ -23,15 +23,7 @@ export default {
 
   optimization: {
     minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          output: {
-            // Preserve CKEditor 5 license comments.
-            comments: /^!/
-          }
-        },
-        extractComments: false
-      })
+      new TerserPlugin()
     ]
   },
 
@@ -63,6 +55,7 @@ export default {
             }
           },
           'css-loader',
+          'postcss-loader'
         ]
       }
     ]
