@@ -2,16 +2,14 @@
   "name": "justnote-editor",
   "version": "0.0.0",
   "description": "The Justnote editor build of CKEditor 5.",
-  "main": "./build/ckeditor.js",
+  "main": "build/ckeditor.js",
   "scripts": {
     "patch-js": "node bin/patch.js",
     "build": "npm run patch-js && webpack --mode production"
   },
-  "dependencies": {
-    "blueimp-load-image": "^5.16.0",
-    "ckeditor5": "^46.0.0"
-  },
   "devDependencies": {
+    "blueimp-load-image": "^5.16.0",
+    "ckeditor5": "^46.0.0",
     "css-loader": "^7.1.2",
     "cssnano": "^7.1.0",
     "esbuild-loader": "^4.3.0",
